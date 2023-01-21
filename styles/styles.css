@@ -897,8 +897,11 @@ body {
   }
 }
 
-.footer-form-label {
-  width: 100%;
+/* phone screen */
+@media screen and (max-width: 767px) {
+  .footer-form-label {
+    width: 100%;
+  }
 }
 
 .footer-input {
