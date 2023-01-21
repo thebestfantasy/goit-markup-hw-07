@@ -228,7 +228,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* phone screen */
   background-image: linear-gradient(to top left, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/hero/people-office_mob@1x.jpg");
 }
@@ -243,38 +242,38 @@ body {
 }
 
 /* tablet screen */
-/* @media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to top left, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/hero/people-office_tab@1x.jpg");
   }
 }
 
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to top left, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/hero/people-office_tab@2x.jpg");
   }
-} */
+}
 
 /* pc screen */
-/* @media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to top left, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/hero/people-office_desk@1x.jpg");
   }
 }
 
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to top left, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/hero/people-office_desk@2x.jpg");
   }
-} */
+}
 
 /* tablet screen */
 @media screen and (min-width: 768px) {
@@ -355,14 +354,6 @@ body {
   padding-bottom: 96px;
 }
 
-/* tablet screen */
-@media screen and (min-width: 768px) {
-  .advantages {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-}
-
 /* desktop screen */
 @media screen and (min-width: 1200px) {
   .advantages {
@@ -391,6 +382,12 @@ body {
 @media screen and (min-width: 1200px) {
   .advantages-list {
     flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-item:not(:last-child) {
+    margin-bottom: 72px;
   }
 }
 
@@ -439,7 +436,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-grey);
-  margin-bottom: 8px;
 }
 
 /* tablet screen */
