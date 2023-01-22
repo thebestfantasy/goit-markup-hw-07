@@ -395,7 +395,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .advantages-item:not(:last-child) {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
   }
 }
 
@@ -408,7 +408,7 @@ body {
     margin-right: 24px;
   }
   .advantages-item:not(:nth-child(n + 3)) {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
   }
 }
 
