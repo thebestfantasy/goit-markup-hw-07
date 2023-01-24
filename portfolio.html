@@ -95,8 +95,16 @@
                 <div class="portfolio-thumb-card">
                   <div class="overlay">
                     <img
-                      src="images/portfolio-1.jpg"
-                      width="360px"
+                      srcset="
+                        ./images/portfolio/img-1_356.jpg 356w,
+                        ./images/portfolio/img-1_360.jpg 360w,
+                        ./images/portfolio/img-1_396.jpg 396w,
+                        ./images/portfolio/img-1_712.jpg 712w,
+                        ./images/portfolio/img-1_720.jpg 720w,
+                        ./images/portfolio/img-1_792.jpg 792w
+                      "
+                      sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                      src="./images/portfolio/img-1_396.jpg"
                       alt="image Banking App Interface Concept"
                     />
                     <div class="slider">

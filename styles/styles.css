@@ -1097,8 +1097,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 48px;
-  column-gap: 24px;
-  padding-right: 20px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1118,7 +1120,6 @@ body {
 
 .filter-item {
   margin-bottom: 16px;
-  /* flex-basis: calc((100% - 2 * 24px) / 3); */
 }
 
 @media screen and (min-width: 768px) {
@@ -1136,7 +1137,7 @@ body {
 .portfolio-list-item {
   margin: 0 auto;
   margin-bottom: 48px;
-  width: 356px;
+  max-width: 396px;
   background: var(--color-main-white);
 }
 
@@ -1149,6 +1150,7 @@ body {
     margin-left: 0px;
     margin-right: 24px;
     max-width: calc((100% - 48px) / 3);
+    width: 356px;
   }
   .portfolio-list-item:nth-child(3n) {
     margin-right: 0;
